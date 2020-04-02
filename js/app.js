@@ -23,15 +23,19 @@ console.log("Military: " + miltaryQuestion);
 getMilitary();
 
 
-// // Question about where I'm from
-// var residentQuestion = prompt(userName + ", am I originally from Washington?", "Yes or No").toLowerCase();
-// if ( residentQuestion === 'no' || residentQuestion === 'n') {
-//     alert(userName + ', you are correct! I\'m originally from SoCal.');
-//     score = (score + 1);
-// } else {
-//     alert(userName + ', you are incorrect.');
-// }
-// console.log("Resident: " + residentQuestion);
+// Question about where I'm from
+function getResident(){
+    var residentQuestion = prompt(userName + ", am I originally from Washington?", "Yes or No").toLowerCase();
+if ( residentQuestion === 'no' || residentQuestion === 'n') {
+    alert(userName + ', you are correct! I\'m originally from SoCal.');
+    score = (score + 1);
+} else {
+    alert(userName + ', you are incorrect.');
+}
+console.log("Resident: " + residentQuestion);
+}
+getResident();
+
 
 // // Question about Pets
 // var petQuestion = prompt(userName + " , do I have any pets?", "Yes or No").toLowerCase();
