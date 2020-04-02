@@ -50,15 +50,18 @@ console.log("Pets: " + petQuestion);
 }
 getPets();
 
-// // Question about family
-// var siblingsQuestion = prompt(userName + ", do I have any brothers and sisters?", "Yes or No").toLowerCase();
-// if (siblingsQuestion === 'no' || siblingsQuestion === 'n') {
-//     alert(userName + ", you are correct! I\'m an only child.");
-//     score = (score + 1);
-// } else {
-//     alert(userName + ", you are incorrect.");
-// }
-// console.log("Siblings: " + siblingsQuestion);
+// Question about family
+function getSiblings(){
+    var siblingsQuestion = prompt(userName + ", do I have any brothers and sisters?", "Yes or No").toLowerCase();
+if (siblingsQuestion === 'no' || siblingsQuestion === 'n') {
+    alert(userName + ", you are correct! I\'m an only child.");
+    score = (score + 1);
+} else {
+    alert(userName + ", you are incorrect.");
+}
+console.log("Siblings: " + siblingsQuestion);
+}
+getSiblings();
 
 // // Question about being married
 // var marriedQuestion = prompt(userName + ", am I married?", "Yes or No").toLowerCase();
