@@ -5,18 +5,23 @@ var score = 0
 function getName(){
     var userName = prompt("Please Enter Your Name", "Russell Wilson");
     console.log("User Name: " + userName );
+    return userName;
 }
-getName();
+var userName = getName();
 
-// // Question about being a veteran
-// var miltaryQuestion = prompt(userName + ", am I prior military?", "Yes or No").toLowerCase();
-// if ( miltaryQuestion === 'yes' || miltaryQuestion === 'y') {
-//     alert(userName + ', you are correct! I served 10yrs as a Submariner in the Navy.');
-//     score = (score + 1); 
-// } else {
-//     alert(userName + ', you are incorrect.');
-// }
-// console.log("Military: " + miltaryQuestion);
+// Question about being a veteran
+function getMilitary(){
+var miltaryQuestion = prompt(userName + ", am I prior military?", "Yes or No").toLowerCase();
+if ( miltaryQuestion === 'yes' || miltaryQuestion === 'y') {
+    alert(userName + ', you are correct! I served 10yrs as a Submariner in the Navy.');
+    score = (score + 1); 
+} else {
+    alert(userName + ', you are incorrect.');
+}
+console.log("Military: " + miltaryQuestion);
+}
+getMilitary();
+
 
 // // Question about where I'm from
 // var residentQuestion = prompt(userName + ", am I originally from Washington?", "Yes or No").toLowerCase();
