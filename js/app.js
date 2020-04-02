@@ -63,55 +63,64 @@ console.log("Siblings: " + siblingsQuestion);
 }
 getSiblings();
 
-// // Question about being married
-// var marriedQuestion = prompt(userName + ", am I married?", "Yes or No").toLowerCase();
-// if ( marriedQuestion === 'no' || marriedQuestion === 'n') {
-//     alert(userName + ', you are correct! I\'m not married, but I am engaged.');
-//     score = (score + 1);
-// } else {
-//     alert(userName + ', you are incorrect.');
-// }
-// console.log("Married: " + marriedQuestion);
+// Question about being married
+function getMarried(){
+    var marriedQuestion = prompt(userName + ", am I married?", "Yes or No").toLowerCase();
+if ( marriedQuestion === 'no' || marriedQuestion === 'n') {
+    alert(userName + ', you are correct! I\'m not married, but I am engaged.');
+    score = (score + 1);
+} else {
+    alert(userName + ', you are incorrect.');
+}
+console.log("Married: " + marriedQuestion);
+}
+getMarried();
 
-// // Question about age
-// var age = "33";
-// var msgHigh = "Too high, try again!";
-// var msgLow = "Too low, try again!";
-// var i;
+// Question about age
+function getAge(){
+    var age = "33";
+var msgHigh = "Too high, try again!";
+var msgLow = "Too low, try again!";
+var i;
 
-// for (i = 0; i < 6; i++) {
-//     var ageQuestion = prompt(userName + ", how old do you think I am?");
-//     if(ageQuestion === age) {
-//         alert("Great guess " + userName + ", you\'re right!");
-//         score = (score + 1);
-//         console.log("Guess: " + ageQuestion);
-//         break;
-//     } else if(ageQuestion > age) {
-//         alert(msgHigh);
-//         console.log("Guess: " + ageQuestion);
-//     } else if(ageQuestion < age) {
-//         alert(msgLow);
-//         console.log("Guess: " + ageQuestion);
-//     }
-// }
+for (i = 0; i < 6; i++) {
+    var ageQuestion = prompt(userName + ", how old do you think I am?");
+    if(ageQuestion === age) {
+        alert("Great guess " + userName + ", you\'re right!");
+        score = (score + 1);
+        console.log("Guess: " + ageQuestion);
+        break;
+    } else if(ageQuestion < age) {
+        alert(msgHigh);
+        console.log("Guess: " + ageQuestion);
+    } else if(ageQuestion > age) {
+        alert(msgLow);
+        console.log("Guess: " + ageQuestion);
+    }
+}
+}
+getAge();
 
-// // Question about visiting places
-// var visitArray = ['japan', 'australia', 'south korea', 'singapore'];
-// var i;
-// var msgScore = "Congratulations, you scored " 
+// Question about visiting places
+function getVisit(){
+    var visitArray = ['japan', 'australia', 'south korea', 'singapore'];
+var i;
+var msgScore = "Congratulations, you scored " 
 
-// for (i = 0; i < 6; i++) {
-//     var visitQuestion = prompt(userName + ", name a country I might have been to.").toLowerCase();
-//     if (visitQuestion === visitArray[i]) {
-//         alert("Great guess! I have been to both Japan and Australia.");
-//         score = (score + 1);
-//         console.log("Visit: " + visitQuestion);
+for (i = 0; i < 6; i++) {
+    var visitQuestion = prompt(userName + ", name a country I might have been to.").toLowerCase();
+    if (visitQuestion === visitArray[i]) {
+        alert("Great guess! I have been to both Japan and Australia.");
+        score = (score + 1);
+        console.log("Visit: " + visitQuestion);
         
-//         break;
-//     } else if (visitQuestion != visitArray[i]) {
-//         alert("Nope, never been there. Try again!");
-//         console.log("Visit: " + visitQuestion);
-//     }
-// }
-// alert("Congratulations, you scored " + score + " right out of 7!");
-// console.log("Score: " + score);
+        break;
+    } else if (visitQuestion != visitArray[i]) {
+        alert("Nope, never been there. Try again!");
+        console.log("Visit: " + visitQuestion);
+    }
+}
+alert("Congratulations, you scored " + score + " right out of 7!");
+console.log("Score: " + score);
+}
+getVisit();
