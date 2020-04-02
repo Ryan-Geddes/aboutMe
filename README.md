@@ -1,2 +1,2 @@
-# aboutMe
-CF201 About Me Lab 03
+# aboutme
+This is a demo website.
