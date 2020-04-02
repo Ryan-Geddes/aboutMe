@@ -37,15 +37,18 @@ console.log("Resident: " + residentQuestion);
 getResident();
 
 
-// // Question about Pets
-// var petQuestion = prompt(userName + " , do I have any pets?", "Yes or No").toLowerCase();
-// if ( petQuestion === 'yes' || petQuestion === 'y') {
-//     alert(userName + ", you are correct! I have one cat.");
-//     score = (score + 1);
-// } else {
-//     alert(userName + ", you are incorrect.");
-// }
-// console.log("Pets: " + petQuestion);
+// Question about Pets
+function getPets(){
+    var petQuestion = prompt(userName + " , do I have any pets?", "Yes or No").toLowerCase();
+if ( petQuestion === 'yes' || petQuestion === 'y') {
+    alert(userName + ", you are correct! I have one cat.");
+    score = (score + 1);
+} else {
+    alert(userName + ", you are incorrect.");
+}
+console.log("Pets: " + petQuestion);
+}
+getPets();
 
 // // Question about family
 // var siblingsQuestion = prompt(userName + ", do I have any brothers and sisters?", "Yes or No").toLowerCase();
